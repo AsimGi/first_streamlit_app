@@ -4,7 +4,7 @@ streamlit.title("My Parents New Healthy Diner")
 
 streamlit.header("Breakfast Menu")
 
-streamlit.Text("Idly")
-streamlit.Text("Dosa")
-streamlit.Text("Vada")
+streamlit.text("Idly")
+streamlit.text("Dosa")
+streamlit.text("Vada")
 
