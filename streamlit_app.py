@@ -39,9 +39,8 @@ my_cur = my_cnx.cursor()
 fruit_add = streamlit.text_input('What fruit would you like to  add?')
 if(fruit_add.strip() != ""):
   my_cur.execute("Insert into fruit_load_list values('" +fruit_add +"')" )
-  my_cur.execute("SELECT * from fruit_load_list")
-  my_data_rows = my_cur.fetchall()
-  my_cur.execute("SELECT * from fruit_load_list")
+  
+my_cur.execute("SELECT * from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
